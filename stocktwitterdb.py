@@ -1,3 +1,6 @@
+import time
+import MySQLdb
+import tweepy
 from textwrap import TextWrapper
 from getpass import getpass
 
