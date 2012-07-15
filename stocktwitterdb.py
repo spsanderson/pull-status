@@ -45,10 +45,10 @@ class StockTweetListener(tweepy.StreamListener):
             target.write(l5)
             target.write(l6)                                    
 
-        except:
+        except UnicodeDecodeError:
             # Catch any unicode errors while printing to console
-            # and just ignore them to avoid breaking application.
-            pass
+            # and just print message if skipped.
+            print "Record Skipped Kid!"
 
 
 
