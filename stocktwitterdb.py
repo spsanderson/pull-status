@@ -55,7 +55,7 @@ class StockTweetListener(tweepy.StreamListener):
     def on_error(self, status_code):
         print 'An error has occured! Status code = %s' % status_code
         target.close()
-         return True # keep stream alive
+        return True # keep stream alive
 
 
 
