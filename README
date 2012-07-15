@@ -15,3 +15,10 @@ If you would like to contribute to the project I encourage it, lets turn
 this into the default framework for pulling in information for text 
 analysis.
 
+This project makes use of the Tweepy API found at:
+https://github.com/tweepy/tweepy   and
+https://github.com/tweepy/tweepy.git
+
+It will also make use of the SmmMobile Sentiment Python Code at
+https://github.com/cyhex/smm    and
+https://github.com/cyhex/smm.git
