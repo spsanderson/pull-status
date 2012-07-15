@@ -3,7 +3,7 @@ import MySQLdb
 import tweepy
 from textwrap import TextWrapper
 from getpass import getpass
-
+id
 qParam = "Twitter"
 
 target = open('results.txt', 'w')
@@ -12,21 +12,16 @@ target.truncate()
 
 
 def debug_print(text):
-
     """Print text if debugging mode is on"""
-
     if settings.debug:
         print text
-
 
 class StockTweetListener(tweepy.StreamListener):
 
     status_wrapper = TextWrapper(width=60, initial_indent=' ', subsequent_indent=' ')
 
     def on_status(self, status):
-
         try:
-
             # print 'Status : %s' %(self.status_wrapper.fill(status.text))
             print '\nStatus : %s' %(status.text)            
             print '\nAuthor : %s' %(status.author.screen_name)
@@ -48,8 +43,6 @@ class StockTweetListener(tweepy.StreamListener):
             target.write(l4)
             target.write(l5)
             target.write(l6)                                    
-
-            
 
         except:
             # Catch any unicode errors while printing to console
