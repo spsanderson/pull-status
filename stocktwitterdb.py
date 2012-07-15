@@ -1,3 +1,4 @@
+# not writing to text file for some reason
 import time
 import MySQLdb
 import tweepy
