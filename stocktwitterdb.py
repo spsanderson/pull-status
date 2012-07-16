@@ -72,7 +72,7 @@ def main():
 
     while 1:
 
-        stream = tweepy.Stream(username,password, StockTweetListener(), timeout=3500)
+        stream = tweepy.Stream(username,password, StockTweetListener(), timeout=None)
         follow_list = None
         stream.filter(follow_list,stock_list)
 
