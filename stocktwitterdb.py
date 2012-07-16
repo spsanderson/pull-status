@@ -1,4 +1,3 @@
-#not writing to text file for some reason
 import time
 import MySQLdb
 import tweepy
@@ -48,7 +47,7 @@ class StockTweetListener(tweepy.StreamListener):
         except UnicodeDecodeError:
             # Catch any unicode errors while printing to console
             # and just print message if skipped.
-            print "Record Skipped Kid!"
+            print "Record Skipped"
 
 
 
