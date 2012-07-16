@@ -1,4 +1,4 @@
-# not writing to text file for some reason
+#not writing to text file for some reason
 import time
 import MySQLdb
 import tweepy
@@ -72,7 +72,7 @@ def main():
 
     while 1:
 
-        stream = tweepy.Stream(username,password, StockTweetListener(), timeout=None)
+        stream = tweepy.Stream(username,password, StockTweetListener(), timeout=3500)
         follow_list = None
         stream.filter(follow_list,stock_list)
 
