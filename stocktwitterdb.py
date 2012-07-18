@@ -1,84 +1,91 @@
 import time
-import MySQLdb
+# import MySQLdb # also not currently used
 import tweepy
-from textwrap import TextWrapper
+# from textwrap import TextWrapper # not used currently
 from getpass import getpass
 
-qParam = "Twitter"
+# define the format for messages here to avoid repetition
+OUT_STR = '''
+Status : %(text)s
+Author : %(author)s
+Date/Time : %(date)s
+Source : %(source)s
+Geo : %(geo)s
 
-target = open('results.txt', 'w')
-target.truncate()
 
 
 
-def debug_print(text):
-    """Print text if debugging mode is on"""
-    if settings.debug:
-        print text
+-----------------------------------------------------------------------------
+
+
+
+
+'''
+
 
 class StockTweetListener(tweepy.StreamListener):
+    def __init__(self, target):
+        super(StockTweetListener, self).__init__();
+        self.target = target
+        # status_wrapper = TextWrapper(width=60, initial_indent=' ',
+        #                             subsequent_indent=' ')
+        # This isn't used in the current code. But, if you were going
+        # to use it, you'd need to assign it to self.status_wrapper;
+        # otherwise the variable would be local to this __init__ method
+        # and inaccessible from anything else.
 
-    status_wrapper = TextWrapper(width=60, initial_indent=' ', subsequent_indent=' ')
 
     def on_status(self, status):
         try:
-            # print 'Status : %s' %(self.status_wrapper.fill(status.text))
-            print '\nStatus : %s' %(status.text)            
-            print '\nAuthor : %s' %(status.author.screen_name)
-            print '\nDate/Time : %s' %(status.created_at)
-            print '\nSource : %s' %(status.source)           
-            print '\nGeo : %s' %(status.geo)
-            print '\n\n\n-----------------------------------------------------------------------------\n\n\n'
+            msg = OUT_STR % {
+                'text': status.text,
+                'author': status.author.screen_name,
+                'date': status.created_at,
+                'source': status.source,
+                'geo': status.geo,
+            }
+            print msg
+            self.target.write(msg)
+            # use self.target here. self is one of the paramaters to this
+            # method and refers to the object; because you assigned to its
+            # .target attribute before, you can use it here.
 
-            l1 = '\nStatus : %s' %(status.text)            
-            l2 = '\nAuthor : %s' %(status.author.screen_name)
-            l3 = '\nDate/Time : %s' %(status.created_at)
-            l4 = '\nSource : %s' %(status.source)           
-            l5 = '\nGeo : %s' %(status.geo)
-            l6 = '\n\n\n-----------------------------------------------------------------------------\n\n\n'
-
-            target.write(l1)
-            target.write(l2)
-            target.write(l3)
-            target.write(l4)
-            target.write(l5)
-            target.write(l6)                                    
 
         except UnicodeDecodeError:
             # Catch any unicode errors while printing to console
-            # and just print message if skipped.
+            # and just ignore them to avoid breaking application.
             print "Record Skipped"
-
-
 
     def on_error(self, status_code):
         print 'An error has occured! Status code = %s' % status_code
-        target.close()
         return True # keep stream alive
-
-
 
     def on_timeout(self):
         print 'Snoozing Zzzzzz'
-        target.close()
-
 
 def main():
     username = raw_input('Twitter username: ')
     password = getpass('Twitter password: ')
     stock = raw_input('Name of Stocks(comma seperated): ')
     stock_list = [u for u in stock.split(',')]
+    follow_list = None # ??? you don't seem to define this variable
 
-    while 1:
+    # open results.txt here and name it f locally. once code flow leaves
+    # the with statement, in this case only through an exception happening
+    # that jumps you out of the while loop, the file will be closed.
+    with open('results.txt', 'w') as f:
+         while True:
+             stream = tweepy.Stream(
+                            username, password,
+                            StockTweetListener(f), # passes the file to __init__
+                                                   # as the "target" argument
 
-        stream = tweepy.Stream(username,password, StockTweetListener(), timeout=None)
-        follow_list = None
-        stream.filter(follow_list,stock_list)
+                            timeout=None)
+             stream.filter(follow_list, stock_list)
+
 
 if __name__ == '__main__':
-
     try:
         main()
     except KeyboardInterrupt:
-        target.close()
         quit()
