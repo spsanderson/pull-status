@@ -1,91 +1,43 @@
 import time
-# import MySQLdb # also not currently used
+import MySQLdb
 import tweepy
-# from textwrap import TextWrapper # not used currently
-from getpass import getpass
+from tweepy.streaming import StreamListener
+from tweepy import OAuthHandler
+from tweepy import Stream
 
-# define the format for messages here to avoid repetition
-OUT_STR = '''
-Status : %(text)s
-Author : %(author)s
-Date/Time : %(date)s
-Source : %(source)s
-Geo : %(geo)s
+# Go to http://dev.twitter.com and create an app.
+# The consumer key and secret will be generated for you after
+consumer_key="# consumer_key here"
+consumer_secret="# consumer_secret here"
 
+# After the step above, you will be redirected to your app's page.
+# Create an access token under the the "Your access token" section
+access_token="# access_token here"
+access_token_secret="# access_token_secret here"
 
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
 
+api = tweepy.API(auth)
 
------------------------------------------------------------------------------
+# If the authentication was successful, you should
+# see the name of the account print out
+print api.me().name
 
+class StdOutListener(StreamListener):
+        """ A listener handles tweets are the received from the stream.
+        This is a basic listener that just prints received tweets to stdout.
 
+        """
+        def on_data(self, data):
+            print data
+            return True
 
-
-'''
-
-
-class StockTweetListener(tweepy.StreamListener):
-    def __init__(self, target):
-        super(StockTweetListener, self).__init__();
-        self.target = target
-        # status_wrapper = TextWrapper(width=60, initial_indent=' ',
-        #                             subsequent_indent=' ')
-        # This isn't used in the current code. But, if you were going
-        # to use it, you'd need to assign it to self.status_wrapper;
-        # otherwise the variable would be local to this __init__ method
-        # and inaccessible from anything else.
-
-
-    def on_status(self, status):
-        try:
-            msg = OUT_STR % {
-                'text': status.text,
-                'author': status.author.screen_name,
-                'date': status.created_at,
-                'source': status.source,
-                'geo': status.geo,
-            }
-            print msg
-            self.target.write(msg)
-            # use self.target here. self is one of the paramaters to this
-            # method and refers to the object; because you assigned to its
-            # .target attribute before, you can use it here.
-
-
-        except UnicodeDecodeError:
-            # Catch any unicode errors while printing to console
-            # and just ignore them to avoid breaking application.
-            print "Record Skipped"
-
-    def on_error(self, status_code):
-        print 'An error has occured! Status code = %s' % status_code
-        return True # keep stream alive
-
-    def on_timeout(self):
-        print 'Snoozing Zzzzzz'
-
-def main():
-    username = raw_input('Twitter username: ')
-    password = getpass('Twitter password: ')
-    stock = raw_input('Name of Stocks(comma seperated): ')
-    stock_list = [u for u in stock.split(',')]
-    follow_list = None # ??? you don't seem to define this variable
-
-    # open results.txt here and name it f locally. once code flow leaves
-    # the with statement, in this case only through an exception happening
-    # that jumps you out of the while loop, the file will be closed.
-    with open('results.txt', 'w') as f:
-         while True:
-             stream = tweepy.Stream(
-                            username, password,
-                            StockTweetListener(f), # passes the file to __init__
-                                                   # as the "target" argument
-
-                            timeout=None)
-             stream.filter(follow_list, stock_list)
-
+        def on_error(self, status):
+            print status
 
 if __name__ == '__main__':
-    try:
-        main()
-    except KeyboardInterrupt:
-        quit()
+        l = StdOutListener()
+
+        stream = Stream(auth, l)	
+        stream.filter(track=['#google'])
