@@ -30,7 +30,13 @@ class StdOutListener(StreamListener):
 
         """
         def on_data(self, data):
-            print data
+            #print data
+            #thedict = ast.literal_eval(data)
+            null=''
+            true=True
+            false=False
+            thedict = eval(data)
+            print thedict['text']
             return True
 
         def on_error(self, status):
@@ -40,4 +46,4 @@ if __name__ == '__main__':
         l = StdOutListener()
 
         stream = Stream(auth, l)	
-        stream.filter(track=['#google'])
+        stream.filter(track=['$MSFT','$GOOG','$CSCO','$AAPL','$C','$BA'])
