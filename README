@@ -5,9 +5,8 @@ be added over time.
 
 The program will work as follows:
 
-The user is asked to input username and password for their Twitter account
-The user is asked to input a search term in the following format 'term'
-Results will pull from Twitter and be put inside of a text file.
+Inside of the file itself search terms are put in
+Results currently stream across shell, next put them in a db
 
 **The results then need to be put into a database this is where I am having trouble.**
 
