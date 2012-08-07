@@ -46,4 +46,4 @@ if __name__ == '__main__':
         l = StdOutListener()
 
         stream = Stream(auth, l)	
-        stream.filter(track=['$MSFT','$GOOG','$CSCO','$AAPL','$C','$BA'])
+        stream.filter(track=['$ATVI','#ATVI','activision','$ADBE','#ADBE','Adobe','$AKAM','#AKAM','Akamai'])
