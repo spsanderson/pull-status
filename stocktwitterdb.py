@@ -47,4 +47,5 @@ if __name__ == '__main__':
 
         stream = Stream(auth, l)	
         stream.filter(track=['$ATVI','#ATVI','activision','$ADBE','#ADBE','Adobe','$AKAM','#AKAM','Akamai','$ALXN',
-                             '#ALXN','alexion','$ALTR','#ALTR','altera','$AMZN','AMZN','amazon.com'])
+                             '#ALXN','alexion','$ALTR','#ALTR','altera','$AMZN','AMZN','amazon.com','$AMGN','#AMGN',
+                             'amgen','$APOL','#APOL','apollo group','$AAPL','#AAPL','apple'])
