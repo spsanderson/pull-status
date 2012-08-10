@@ -51,4 +51,5 @@ if __name__ == '__main__':
                              'amgen','$APOL','#APOL','apollo group','$AAPL','#AAPL','apple','$AMAT','#AMAT',
                              'applied materials','$ADSK','#ADSK','Autodesk','$ADP','#ADP','Automatic Data Processing',
                              '$AVGO','#AVGO','Avago Technologies','$BIDU','#BIDU','Badiu','$BBBY','#BBBY','Bed Bath and Beyond',
-                             'Bed Bath & Beyond'])
+                             'Bed Bath & Beyond','$BIIB','#BIIB','Biogen','$BMC','#BMC','BMC Software','$BRCM','#BRCM',
+                             'Braodcom'])
