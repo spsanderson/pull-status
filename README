@@ -21,3 +21,7 @@ https://github.com/tweepy/tweepy.git
 It will also make use of the SmmMobile Sentiment Python Code at
 https://github.com/cyhex/smm    and
 https://github.com/cyhex/smm.git
+
+This project is also making extensive use of the nltk pythoc toolkit at
+http://www.nltk.org
+https://github.com/nltk/nltk/
