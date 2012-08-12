@@ -52,4 +52,6 @@ if __name__ == '__main__':
                              'applied materials','$ADSK','#ADSK','Autodesk','$ADP','#ADP','Automatic Data Processing',
                              '$AVGO','#AVGO','Avago Technologies','$BIDU','#BIDU','Badiu','$BBBY','#BBBY','Bed Bath and Beyond',
                              'Bed Bath & Beyond','$BIIB','#BIIB','Biogen','$BMC','#BMC','BMC Software','$BRCM','#BRCM','Braodcom',
-                             '$CHRW','#CHRW','C.H. Robinson Worldwide','$CA','#CA','CA Inc','$CELG','#CELG','Celgene Corporation'])
+                             '$CHRW','#CHRW','C.H. Robinson Worldwide','$CA','#CA','CA Inc','$CELG','#CELG','Celgene Corporation',
+                             '$CERN','#CERN','Cerner Corporation','$CHKP','#CHKP','Check Point Software Technologies',
+                             '$CSCO','#CSCO','Cisco'])
