@@ -54,4 +54,5 @@ if __name__ == '__main__':
                              'Bed Bath & Beyond','$BIIB','#BIIB','Biogen','$BMC','#BMC','BMC Software','$BRCM','#BRCM','Braodcom',
                              '$CHRW','#CHRW','C.H. Robinson Worldwide','$CA','#CA','CA Inc','$CELG','#CELG','Celgene Corporation',
                              '$CERN','#CERN','Cerner Corporation','$CHKP','#CHKP','Check Point Software Technologies',
-                             '$CSCO','#CSCO','Cisco'])
+                             '$CSCO','#CSCO','Cisco','$CTXS','#CTXS','Citrix Systems','$CTSH','#CTSH','Cognizant Technology Solutions',
+                             '$CMCSA','#CMCSA','Comcast'])
