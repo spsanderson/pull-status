@@ -22,6 +22,6 @@ It will also make use of the SmmMobile Sentiment Python Code at
 https://github.com/cyhex/smm    and
 https://github.com/cyhex/smm.git
 
-This project is also making extensive use of the nltk pythoc toolkit at
+This project is also making extensive use of the nltk python toolkit at
 http://www.nltk.org
 https://github.com/nltk/nltk/
