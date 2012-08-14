@@ -47,11 +47,11 @@ if __name__ == '__main__':
 
         stream = Stream(auth, l)	
         stream.filter(track=['$ATVI','#ATVI','activision','$ADBE','#ADBE','Adobe','$AKAM','#AKAM','Akamai','$ALXN',
-                             '#ALXN','alexion','$ALTR','#ALTR','altera','$AMZN','AMZN','amazon.com','$AMGN','#AMGN',
-                             'amgen','$APOL','#APOL','apollo group','$AAPL','#AAPL','apple','$AMAT','#AMAT',
-                             'applied materials','$ADSK','#ADSK','Autodesk','$ADP','#ADP','Automatic Data Processing',
-                             '$AVGO','#AVGO','Avago Technologies','$BIDU','#BIDU','Badiu','$BBBY','#BBBY','Bed Bath and Beyond',
-                             'Bed Bath & Beyond','$BIIB','#BIIB','Biogen','$BMC','#BMC','BMC Software','$BRCM','#BRCM','Braodcom',
+                             '#ALXN','alexion','$ALTR','#ALTR','altera','$AMZN','#AMZN','amazon.com','$AMGN','#AMGN',
+                             'amgen','$APOL','#APOL','apollo group','$AAPL','#AAPL','apple','$AMAT','#AMAT','Applied materials',
+                             '$ADSK','#ADSK','Autodesk','$ADP','#ADP','Automatic Data Processing','$AVGO','#AVGO',
+                             'avago technologies','$BIDU','#BIDU','Baidu','$BBBY','#BBBY','Bed Bath and Beyond','Bed Bath & Beyond',
+                             '$BIIB','#BIIB','Biogen','$BMC','#BMC','BMC Software','$BRCM','#BRCM','Broadcom',
                              '$CHRW','#CHRW','C.H. Robinson Worldwide','$CA','#CA','CA Inc','$CELG','#CELG','Celgene Corporation',
                              '$CERN','#CERN','Cerner Corporation','$CHKP','#CHKP','Check Point Software Technologies',
                              '$CSCO','#CSCO','Cisco','$CTXS','#CTXS','Citrix Systems','$CTSH','#CTSH','Cognizant Technology Solutions',
