@@ -56,4 +56,6 @@ if __name__ == '__main__':
                              '$CERN','#CERN','Cerner Corporation','$CHKP','#CHKP','Check Point Software Technologies',
                              '$CSCO','#CSCO','Cisco','$CTXS','#CTXS','Citrix Systems','$CTSH','#CTSH','Cognizant Technology Solutions',
                              '$CMCSA','#CMCSA','Comcast','$COST','#COST','Costco','$DELL','#DELL','Dell','$XRAY','#XRAY','Dentsply',
-                             '$DTV','#DTV','Direct TV','$DLTR','#DLTR','Dollar Tree','$EBAY','#EBAY','eBay'])
+                             '$DTV','#DTV','Direct TV','$DLTR','#DLTR','Dollar Tree','$EBAY','#EBAY','eBay','$ERTS','#ERTS',
+                             'Electronic Arts','EA','$EXPE','#EXPE','Expedia','$EXPD','#EXPD','Expeditors International of Washington',
+                             '$ESRX','#ESRX','Express Scripts','$FFIV','#FFIV','F5 Networks','$FAST','#FAST','Fastenal Company'])
