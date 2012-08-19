@@ -58,4 +58,6 @@ if __name__ == '__main__':
                              '$CMCSA','#CMCSA','Comcast','$COST','#COST','Costco','$DELL','#DELL','Dell','$XRAY','#XRAY','Dentsply',
                              '$DTV','#DTV','Direct TV','$DLTR','#DLTR','Dollar Tree','$EBAY','#EBAY','eBay','$ERTS','#ERTS',
                              'Electronic Arts','EA','$EXPE','#EXPE','Expedia','$EXPD','#EXPD','Expeditors International of Washington',
-                             '$ESRX','#ESRX','Express Scripts','$FFIV','#FFIV','F5 Networks','$FAST','#FAST','Fastenal Company'])
+                             '$ESRX','#ESRX','Express Scripts','$FFIV','#FFIV','F5 Networks','$FAST','#FAST','Fastenal Company',
+                             '$FISV','#FSIV','Fiserv','$FLEX','#FLEX','Flextronics','$FOSL','#FOSL','Fossil Inc.','$GRMN','#GRMN',
+                             'Garmin','$GILD','#GILD','Gilead Inc','$GOOG','#GOOG','Google'])
