@@ -61,4 +61,6 @@ if __name__ == '__main__':
                              '$ESRX','#ESRX','Express Scripts','$FFIV','#FFIV','F5 Networks','$FAST','#FAST','Fastenal Company',
                              '$FISV','#FSIV','Fiserv','$FLEX','#FLEX','Flextronics','$FOSL','#FOSL','Fossil Inc.','$GRMN','#GRMN',
                              'Garmin','$GILD','#GILD','Gilead Inc','$GOOG','#GOOG','Google','$GMCR','#GMCR','Green Mountain Coffee',
-                             '$HSIC','#HSIC','Henry Schein','$INFY','#INFY','Infosys Limited'])
+                             '$HSIC','#HSIC','Henry Schein','$INFY','#INFY','Infosys Limited','$INTC','#INTC','Intel Corporation',
+                             'Intel','$INTU','#INTU','Intuit','$ISRG','#ISRG','Intuitive Surgical Inc','$KLAC','#KLAC','KLA-Tencor',
+                             '$KFT','#KFT','Kraft','$LRCX','#LRCX','Lam Research']) 
