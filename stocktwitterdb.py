@@ -63,4 +63,7 @@ if __name__ == '__main__':
                              'Garmin','$GILD','#GILD','Gilead Inc','$GOOG','#GOOG','Google','$GMCR','#GMCR','Green Mountain Coffee',
                              '$HSIC','#HSIC','Henry Schein','$INFY','#INFY','Infosys Limited','$INTC','#INTC','Intel Corporation',
                              'Intel','$INTU','#INTU','Intuit','$ISRG','#ISRG','Intuitive Surgical Inc','$KLAC','#KLAC','KLA-Tencor',
-                             '$KFT','#KFT','Kraft','$LRCX','#LRCX','Lam Research']) 
+                             '$KFT','#KFT','Kraft','$LRCX','#LRCX','Lam Research','$LINTA','#LINTA','Liberty Media Corporation',
+                             '$LIFE','#LIFE','Life Technologies Corporation','$LLTC','#LLTC','Linear Technology Corporation',
+                             '$MRVL','#MRVL','Marvell Technology Group','$MAT','#MAT','Mattel','$MXIM','#MXIM',
+                             'Maxim Integrated Products']) 
