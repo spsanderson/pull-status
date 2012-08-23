@@ -66,4 +66,6 @@ if __name__ == '__main__':
                              '$KFT','#KFT','Kraft','$LRCX','#LRCX','Lam Research','$LINTA','#LINTA','Liberty Media Corporation',
                              '$LIFE','#LIFE','Life Technologies Corporation','$LLTC','#LLTC','Linear Technology Corporation',
                              '$MRVL','#MRVL','Marvell Technology Group','$MAT','#MAT','Mattel','$MXIM','#MXIM',
-                             'Maxim Integrated Products']) 
+                             'Maxim Integrated Products','$MCHP','#MCHP','Microchip Technology Incorporated','$MU','#MU',
+                             'Micron Technology Inc.','$MSFT','#MSFT','Mircrosoft','$MNST','#MNST','Monster Beverage Corporation',
+                             '$MYL','#MYL','Mylan Inc','$NTAP','#NTAP','NetApp Inc']) 
