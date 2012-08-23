@@ -1,5 +1,6 @@
+import sys
 import time
-import MySQLdb
+#import MySQLdb
 import tweepy
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
