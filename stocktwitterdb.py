@@ -80,4 +80,15 @@ if __name__ == '__main__':
                              '$MRVL','#MRVL','Marvell Technology Group','$MAT','#MAT','Mattel','$MXIM','#MXIM',
                              'Maxim Integrated Products','$MCHP','#MCHP','Microchip Technology Incorporated','$MU','#MU',
                              'Micron Technology Inc.','$MSFT','#MSFT','Mircrosoft','$MNST','#MNST','Monster Beverage Corporation',
-                             '$MYL','#MYL','Mylan Inc','$NTAP','#NTAP','NetApp Inc']) 
+                             '$MYL','#MYL','Mylan Inc','$NTAP','#NTAP','NetApp Inc','$NFLX','#NFLX','Netflix','$NUAN','#NUAN','Nuance Communications',
+                             '$NVDA','#NVDA','NVIDIA','$NWSA','#NWSA','News Corporation','$ORLY','#ORLY',"O'Reilly Automotive",
+                             '$ORCL','#ORCL','Oracle Corp','$PCAR','#PCAR','PACCAR Inc','$PAYX','#PAYX','Paychex Inc','$PCLN','#PCLN',
+                             'priceline.com Inc','$PRGO','#PRGO','Perrigoo Company','$QCOM','#QCOM','QUALCOMM','$RIMM','#RIMM',
+                             'Research in Motion','$ROST','#ROST','Ross Stores Inc','$SNDK','#SNDK','SanDisk Corporation','$STX','#STX',
+                             'Seagate TEchnology','$SHLD','#SHLD','Sears Holdings Corporation','$SIAL','#SIAL','Sigma-Aldrich Corporation',
+                             '$SIRI','#SIRI','Sirius XM Radio','$SPLS','#SPLS','Staples Inc','$SBUX','#SBUX','Starbucks','$SRCL','#SRCL',
+                             'Stericycle Inc','$SYMC','#SYMC','Symantec Corporation','$TXN','#TXN','Texas Instruments','$VRSN',
+                             '#VRSN','VeriSign','$VRTX','#VRTX','Vertex Pharmaceuticals','$VIAB','#VIAB','Viacom','$VMED',
+                             '#VMED','Virgin Media Inc','$VOD','#VOD','Vodafone Group','$WCRX','#WCRX','Warner Chilcott','
+                             '$WFM','#WFM','Whole Foods Market','$WYNN','#WYNN','Wynn Resorts','$XLNX','#XLNX','Xilinx Inc',
+                             '$YHOO','#YHOO','Yahoo! Inc']) 
