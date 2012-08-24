@@ -89,6 +89,6 @@ if __name__ == '__main__':
                              '$SIRI','#SIRI','Sirius XM Radio','$SPLS','#SPLS','Staples Inc','$SBUX','#SBUX','Starbucks','$SRCL','#SRCL',
                              'Stericycle Inc','$SYMC','#SYMC','Symantec Corporation','$TXN','#TXN','Texas Instruments','$VRSN',
                              '#VRSN','VeriSign','$VRTX','#VRTX','Vertex Pharmaceuticals','$VIAB','#VIAB','Viacom','$VMED',
-                             '#VMED','Virgin Media Inc','$VOD','#VOD','Vodafone Group','$WCRX','#WCRX','Warner Chilcott','
+                             '#VMED','Virgin Media Inc','$VOD','#VOD','Vodafone Group','$WCRX','#WCRX','Warner Chilcott',
                              '$WFM','#WFM','Whole Foods Market','$WYNN','#WYNN','Wynn Resorts','$XLNX','#XLNX','Xilinx Inc',
                              '$YHOO','#YHOO','Yahoo! Inc']) 
