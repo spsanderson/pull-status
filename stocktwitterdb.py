@@ -24,7 +24,7 @@ class StdOutListener(StreamListener):
         """
         def on_status(self, data):
             try:
-                print '%s , %s , %s , %s \n\n' % (data.text,data.author.screen_name,data.created_at,data.source)
+                print '%s , %s , %s , %s' % (data.text,data.author.screen_name,data.created_at,data.source)
                 return True
             except Exception, e:
                 print >> sys.stderr, 'Encountered Exception:', e
@@ -32,19 +32,6 @@ class StdOutListener(StreamListener):
 
         def on_error(self, status):
             return True
-
-        #def on_data(self, data):
-            #print data
-            #thedict = ast.literal_eval(data)
-            #null=''
-            #true=True
-            #false=False
-            #thedict = eval(data)
-            #print thedict['text']
-            #return True
-
-        #def on_error(self, status):
-            #print status
 
 if __name__ == '__main__':
     l = StdOutListener()
