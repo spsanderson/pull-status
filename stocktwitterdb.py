@@ -24,7 +24,8 @@ class StdOutListener(StreamListener):
         """
         def on_status(self, data):
             try:
-                print '%s , %s , %s , %s' % (data.text,data.author.screen_name,data.created_at,data.source)
+                print '%s , %s , %s , %s' % (data.text,\
+                data.author.screen_name,data.created_at,data.source)
                 return True
             except Exception, e:
                 print >> sys.stderr, 'Encountered Exception:', e
